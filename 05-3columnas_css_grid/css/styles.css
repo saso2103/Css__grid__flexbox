@@ -49,3 +49,22 @@ p {
 
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .contenedor-grid{
+        display:grid;
+        grid-template-areas: "izquierda contenido derecha";     /* lo utilizamos 
+        para definir en que posicion va cada area */
+        grid-template-columns:20% 60% 20% ;
+        grid-auto-flow: column; /* usamos grid-auto-flow:columns cuando el diseño de cuadriculas de cuadriculas de grid no se pone
+        en el lugar que deseamos que este */
+        column-gap: 2rem;
+       
+    }
+    .contenido-principal{
+        grid-area: contenido;
+    }
+    .sidebar-1 {
+        grid-area: izquierda;
+    }
+    
+}
